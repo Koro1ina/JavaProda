@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <PasswordField fx:id="password_" layoutX="271.0" layoutY="200.0" promptText="Введите пароль" />
+      <TextField fx:id="login_text" layoutX="271.0" layoutY="130.0" promptText="Введите логин" />
+      <TextField fx:id="password_text" layoutX="271.0" layoutY="200.0" visible="false" />
+      <CheckBox fx:id="open" layoutX="461.0" layoutY="204.0" mnemonicParsing="false" onAction="#open" text="Посмотреть пароль" />
+      <Button fx:id="button" layoutX="125.0" layoutY="297.0" mnemonicParsing="false" text="Войти" />
+      <Label fx:id="error" layoutX="271.0" layoutY="242.0" prefHeight="17.0" prefWidth="149.0" textFill="#d01616" />
+      <Label layoutX="125.0" layoutY="134.0" text="Логин" />
+      <Label layoutX="122.0" layoutY="204.0" prefHeight="17.0" prefWidth="52.0" text="Пароль" />
+      <Label layoutX="246.0" layoutY="35.0" text="Авторизация">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Canvas fx:id="canvas" height="55.0" layoutX="271.0" layoutY="270.0" width="200.0" />
+      <TextField fx:id="textCanvas" layoutX="271.0" layoutY="341.0" visible="false" />
+   </children>
+</AnchorPane>
